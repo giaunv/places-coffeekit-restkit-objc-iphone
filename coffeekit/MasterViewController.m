@@ -8,6 +8,9 @@
 
 #import "MasterViewController.h"
 
+#define kCLIENTID @"RFZ3ACGIIO0ZOALYPIGJNC1IQOAWXMXVCVO1SAUTDQKQXZIL"
+#define kCLIENTSECRET @"BSIVZ20I1W2OKVFZ5YCN2CC5TGDBXYXGDVLBFTYNUUISQV21"
+
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
