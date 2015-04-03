@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716F74840D918ABA32A1FA29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88C1A0D536822CA71AEE6B7 /* libPods.a */; };
 		94D34B9A1ACE0D7600BADD2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34B991ACE0D7600BADD2D /* main.m */; };
 		94D34B9D1ACE0D7600BADD2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34B9C1ACE0D7600BADD2D /* AppDelegate.m */; };
 		94D34BA01ACE0D7600BADD2D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34B9F1ACE0D7600BADD2D /* MasterViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92358137053D01E53383F664 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		94D34B941ACE0D7600BADD2D /* coffeekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeekit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D34B981ACE0D7600BADD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94D34B991ACE0D7600BADD2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		94D34BB01ACE0D7700BADD2D /* coffeekitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeekitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D34BB51ACE0D7700BADD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94D34BB61ACE0D7700BADD2D /* coffeekitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coffeekitTests.m; sourceTree = "<group>"; };
+		C88C1A0D536822CA71AEE6B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99164614281FAE40977813 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716F74840D918ABA32A1FA29 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C102DEDB3775B6E0E80B6C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C88C1A0D536822CA71AEE6B7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		562A634D793F567A499DF35E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA99164614281FAE40977813 /* Pods.debug.xcconfig */,
+				92358137053D01E53383F664 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		94D34B8B1ACE0D7600BADD2D = {
 			isa = PBXGroup;
 			children = (
 				94D34B961ACE0D7600BADD2D /* coffeekit */,
 				94D34BB31ACE0D7700BADD2D /* coffeekitTests */,
 				94D34B951ACE0D7600BADD2D /* Products */,
+				562A634D793F567A499DF35E /* Pods */,
+				1C102DEDB3775B6E0E80B6C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94D34BBA1ACE0D7700BADD2D /* Build configuration list for PBXNativeTarget "coffeekit" */;
 			buildPhases = (
+				8CEE35397845C3071E183ADE /* Check Pods Manifest.lock */,
 				94D34B901ACE0D7600BADD2D /* Sources */,
 				94D34B911ACE0D7600BADD2D /* Frameworks */,
 				94D34B921ACE0D7600BADD2D /* Resources */,
+				46B7CF4417BE96CA6AB89C21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46B7CF4417BE96CA6AB89C21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEE35397845C3071E183ADE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94D34B901ACE0D7600BADD2D /* Sources */ = {
@@ -341,6 +400,7 @@
 		};
 		94D34BBB1ACE0D7700BADD2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA99164614281FAE40977813 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = coffeekit/Info.plist;
@@ -351,6 +411,7 @@
 		};
 		94D34BBC1ACE0D7700BADD2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92358137053D01E53383F664 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = coffeekit/Info.plist;
@@ -412,6 +473,7 @@
 				94D34BBC1ACE0D7700BADD2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94D34BBD1ACE0D7700BADD2D /* Build configuration list for PBXNativeTarget "coffeekitTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				94D34BBF1ACE0D7700BADD2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
