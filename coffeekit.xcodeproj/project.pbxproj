@@ -15,6 +15,7 @@
 		94D34BA81ACE0D7700BADD2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D34BA71ACE0D7700BADD2D /* Images.xcassets */; };
 		94D34BAB1ACE0D7700BADD2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D34BA91ACE0D7700BADD2D /* LaunchScreen.xib */; };
 		94D34BB71ACE0D7700BADD2D /* coffeekitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BB61ACE0D7700BADD2D /* coffeekitTests.m */; };
+		94D34BC21ACEECA500BADD2D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BC11ACEECA500BADD2D /* Venue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		94D34BB01ACE0D7700BADD2D /* coffeekitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeekitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D34BB51ACE0D7700BADD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94D34BB61ACE0D7700BADD2D /* coffeekitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coffeekitTests.m; sourceTree = "<group>"; };
+		94D34BC01ACEECA500BADD2D /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		94D34BC11ACEECA500BADD2D /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		C88C1A0D536822CA71AEE6B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99164614281FAE40977813 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +116,8 @@
 				94D34BA71ACE0D7700BADD2D /* Images.xcassets */,
 				94D34BA91ACE0D7700BADD2D /* LaunchScreen.xib */,
 				94D34B971ACE0D7600BADD2D /* Supporting Files */,
+				94D34BC01ACEECA500BADD2D /* Venue.h */,
+				94D34BC11ACEECA500BADD2D /* Venue.m */,
 			);
 			path = coffeekit;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D34B9D1ACE0D7600BADD2D /* AppDelegate.m in Sources */,
+				94D34BC21ACEECA500BADD2D /* Venue.m in Sources */,
 				94D34BA01ACE0D7600BADD2D /* MasterViewController.m in Sources */,
 				94D34B9A1ACE0D7600BADD2D /* main.m in Sources */,
 			);
