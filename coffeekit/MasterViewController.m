@@ -10,6 +10,8 @@
 #import "MasterViewController.h"
 #import "Venue.h"
 #import "Location.h"
+#import "VenueCell.h"
+#import "Stats.h"
 
 #define kCLIENTID @"RFZ3ACGIIO0ZOALYPIGJNC1IQOAWXMXVCVO1SAUTDQKQXZIL"
 #define kCLIENTSECRET @"BSIVZ20I1W2OKVFZ5YCN2CC5TGDBXYXGDVLBFTYNUUISQV21"
@@ -54,6 +56,11 @@
     
     // define relationship mapping
     [venueMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"location" toKeyPath:@"location" withMapping:locationMapping]];
+    
+    RKObjectMapping *statsMapping = [RKObjectMapping mappingForClass:[Stats class]];
+    [statsMapping addAttributeMappingsFromDictionary:@{@"checkinsCount": @"checkins", @"tipCount": @"tips", @"usersCount": @"users"}];
+    
+    [venueMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"stats" toKeyPath:@"stats" withMapping:statsMapping]];
 }
 
 - (void)loadVenues{
@@ -94,11 +101,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
+    VenueCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VenueCell" forIndexPath:indexPath];
+    
     Venue *venue = _venues[indexPath.row];
-    cell.textLabel.text = venue.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.0fm", venue.location.distance.floatValue];
+    cell.nameLabel.text = venue.name;
+    cell.distanceLabel.text = [NSString stringWithFormat:@"%.0fm", venue.location.distance.floatValue];
+    cell.checkinsLabel.text = [NSString stringWithFormat:@"%d checkins", venue.stats.checkins.intValue];
     
     return cell;
 }

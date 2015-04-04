@@ -17,6 +17,8 @@
 		94D34BB71ACE0D7700BADD2D /* coffeekitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BB61ACE0D7700BADD2D /* coffeekitTests.m */; };
 		94D34BC21ACEECA500BADD2D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BC11ACEECA500BADD2D /* Venue.m */; };
 		94D34BC51ACF4B1100BADD2D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BC41ACF4B1100BADD2D /* Location.m */; };
+		94D34BC81ACF588C00BADD2D /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BC71ACF588C00BADD2D /* VenueCell.m */; };
+		94D34BCB1ACF5AF600BADD2D /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D34BCA1ACF5AF600BADD2D /* Stats.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		94D34BC11ACEECA500BADD2D /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		94D34BC31ACF4B1100BADD2D /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		94D34BC41ACF4B1100BADD2D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		94D34BC61ACF588C00BADD2D /* VenueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueCell.h; sourceTree = "<group>"; };
+		94D34BC71ACF588C00BADD2D /* VenueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueCell.m; sourceTree = "<group>"; };
+		94D34BC91ACF5AF600BADD2D /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		94D34BCA1ACF5AF600BADD2D /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
 		C88C1A0D536822CA71AEE6B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99164614281FAE40977813 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +129,10 @@
 				94D34BC11ACEECA500BADD2D /* Venue.m */,
 				94D34BC31ACF4B1100BADD2D /* Location.h */,
 				94D34BC41ACF4B1100BADD2D /* Location.m */,
+				94D34BC61ACF588C00BADD2D /* VenueCell.h */,
+				94D34BC71ACF588C00BADD2D /* VenueCell.m */,
+				94D34BC91ACF5AF600BADD2D /* Stats.h */,
+				94D34BCA1ACF5AF600BADD2D /* Stats.m */,
 			);
 			path = coffeekit;
 			sourceTree = "<group>";
@@ -289,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D34B9D1ACE0D7600BADD2D /* AppDelegate.m in Sources */,
+				94D34BC81ACF588C00BADD2D /* VenueCell.m in Sources */,
 				94D34BC51ACF4B1100BADD2D /* Location.m in Sources */,
 				94D34BC21ACEECA500BADD2D /* Venue.m in Sources */,
+				94D34BCB1ACF5AF600BADD2D /* Stats.m in Sources */,
 				94D34BA01ACE0D7600BADD2D /* MasterViewController.m in Sources */,
 				94D34B9A1ACE0D7600BADD2D /* main.m in Sources */,
 			);

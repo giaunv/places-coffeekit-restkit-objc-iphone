@@ -2,7 +2,7 @@
 //  Location.h
 //  coffeekit
 //
-//  Created by lavalamp on 4/4/15.
+//  Created by giaunv on 4/4/15.
 //  Copyright (c) 2015 366. All rights reserved.
 //
 
