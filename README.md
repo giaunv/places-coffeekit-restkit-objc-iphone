@@ -1,4 +1,4 @@
-# An introduction to RestKit with Objective C, Xcode 6 and iOS 8, tutorial by Scott @raywenderlich.com
+# A find near by coffee shop demo for iPhone with Objective C, RestKit, Xcode 6 and iOS 8, tutorial by Scott @raywenderlich.com
 
 **Tutorial By Scott**
 
